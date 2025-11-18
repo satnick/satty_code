@@ -1,5 +1,5 @@
 #  Hi 👋, I'm Satish Kumar
-**A passionate Software Engineer || Appication developer || C++ expert.**
+**A passionate Software Engineer || Appication developer || C++ expert || Cross platform development.**
 
 **Worked in diverse domains like semiconductor, healthcare, industrial automation. Strong engineering professional with B Tech in Computer Science.**
 
