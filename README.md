@@ -3,7 +3,7 @@
 
 **Worked in diverse domains like semiconductor, healthcare, industrial automation. Strong engineering professional with B Tech in Computer Science.**
 
-Email Me 👉 ✉️ **satish64607@gmail.com** For Collaboration/Project or Anything Else. 😊😊
+Email Me 👉 ✉️ **satish64607@gmail.com** For Collaboration/Project/Freelancing or Anything Else. 😊😊
 
 - 🌱 **I’m currently learning:** Competitive coding in Leetcode
 - 👯 **I’m looking to collaborate on:** C++ projects
