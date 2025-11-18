@@ -1,5 +1,7 @@
 #  Hi 👋, I'm Satish Kumar
-**A passionate Software Engineer || Appication developer || C++ expert || Worked in diverse domains like semiconductor, healthcare, industrial automation**
+**A passionate Software Engineer || Appication developer || C++ expert.**
+
+**Worked in diverse domains like semiconductor, healthcare, industrial automation. Strong engineering professional with B Tech in Computer Science.**
 
 Email Me 👉 ✉️ **satish64607@gmail.com** For Collaboration/Project or Anything Else. 😊😊
 
@@ -7,8 +9,8 @@ Email Me 👉 ✉️ **satish64607@gmail.com** For Collaboration/Project or Anyt
 - 👯 **I’m looking to collaborate on:** C++ projects
 - 💬 **Ask me about:** Collaboration, Tech Support
 - 📫 **How to reach me:** satish64607@gmail.com
-- 😄 **Pronouns:** Satish
-- ⚡ **Fun fact:** When i dive into coding, forget to get to surface
+- 😄 **Pronounce me as:** Satish
+- ⚡ **Fun fact:** When i dive into coding, forget to get to surface until solved
 - 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/satishkmr) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:satish64607@gmail.com) 
