@@ -45,9 +45,6 @@ public:
             newMatPos++;;
         }
 
-        
-
-        return v;
-        
+        return v;        
     }
 };
