@@ -8,6 +8,8 @@ public:
         if(row*col!=r*c)
             return mat;
 
+         if(row==r && col== c)
+            return mat;
    
         vector<vector<int>> v(r, vector<int>(c, 0));
         int newrow =0,newcol = 0;
