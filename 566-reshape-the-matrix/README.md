@@ -31,3 +31,44 @@
 	<li><code>-1000 &lt;= mat[i][j] &lt;= 1000</code></li>
 	<li><code>1 &lt;= r, c &lt;= 300</code></li>
 </ul>
+
+**Concept:**
+
+**First approach:**
+This is based on the fact that for new matrix, element will be updated for row and col, as we iterate over the matrix the next entry would be for newxt col.
+Suppose new matrix size is **4*2** and given matrix size is **2*4**, 
+Now will take row=0 and col=0 and start iterating over given matrix **2*4**
+so first element will be stored in [0][0], here row = 0, col = 0
+next element will be stored in [0][1], here row = 0, col = 1 by increasing col + 1; in new matrix of **4*2**
+Since col = 1 now and its last col for cur row = 0, so go to next row by row++ and set col = 0.
+
+**Second approach**:
+This is based on the fact that in matrix if its represented as [i][j] for position x
+Suppose matrix is
+
+[0,0]	[0,1]	[0,2]
+[1,0]	[1,1]	[1,2]
+
+
+<img width="241" height="49" alt="image" src="https://github.com/user-attachments/assets/96638604-545d-4d81-a063-6ac21bf91bbe" />
+
+<br>[0,0] is at 0th position<br>
+[0,1] is at 1st position<br>
+[0,2] is at 2nd position<br>
+[1,0] is at 3rd position<br>
+[1,1] is at 4th position<br>
+[1,2] is at 5th position<br>
+
+Each index [i,j] can be represented based on the postion by: <br>
+[position/col, position%col] where col is number of col of matrix. here col = 2 <br><br>
+ex: pos = 0, then index is [0/2, 0%2] or [0,0] <br>
+	pos = 1, then index is [1/2, 1%2] or [0,1] <br>
+	pos = 2, then index is [2/2, 2%2] or [1,0] <br>
+	pos = 3, then index is [3/2, 3%2] or [1,1] <br>
+	pos = 4, then index is [4/2, 4%2] or [2,0] <br>
+	pos = 5, then index is [5/2, 5%2] or [2,1] <br>
+	
+
+
+
+
