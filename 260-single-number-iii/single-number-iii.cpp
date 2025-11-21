@@ -29,10 +29,7 @@ public:
             {
                 xorFilter[1] = xorFilter[1]^nums[i];
             }
-        }
-
-
-        
+        }       
 
         return xorFilter;      
     }
