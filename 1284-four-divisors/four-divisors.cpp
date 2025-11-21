@@ -15,14 +15,14 @@ public:
                     count += 2;
                     sum = sum + i + num/i;
                 }
-                else 
+                else  //this is the case if num/i==i, if num is 25, 25/5 is 5, so its only one divisor not two and so count is incremented by 1
                    {
-                    sum = sum + i;
+                    sum = sum + i; 
                      count+=1;
                    }
             }
         }
-        if(count == 2)
+        if(count == 2)  //as two other divisor will always be 1 and number itself, so total count is 4
             return sum+1+num;
        
        return 0;
