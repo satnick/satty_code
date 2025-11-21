@@ -1,0 +1,41 @@
+This is an interesting problem where first understand how to create expression in order to reverse bits.
+
+Lets say number is 5, its bits representation is 0101 considering now 4 bits only for understanding.
+n=5
+
+0101 reverse bits representation will be 1010.
+Nunmber formed by reversing bits is 10 (1010)
+
+So in order to achieve this from 0101 first find the bit at LSB if its set or not, here LSB of 0101 is 1 so its set.
+It can be determined by n&1 => 0101 & 1 = 0001
+So if n&1 == 1 LSB is set.
+
+Now create a res which will contain the bits from LSB as
+let say res = 0, do res << 1 and do OR operation with LSB as
+res<<1 what it does is whatever its set we are left shifting by 1 to make space to include LSB of n as
+res = res<<1 | n&1
+
+once res LSB is set with LSB of n by OR operation, we left shift the res i.e. move the bit to left by 1 bit to make space for new LSB of n.
+
+new LSB of n would obtained by removing the current LSB as
+n = n>>1
+i.e. by right shifting n by 1, we can know whats the next bit.
+
+So the logic is written as
+
+int reverseBits(int n) {
+
+        int res = 0;
+        for(int i=0; i<32; i++)
+        {
+            res = res << 1; //make space for new LSB of n
+            int lsbBit = n&1; //check LSB of n
+
+            res = res | lsbBit; //doing OR operation to include the LSB of n into LSB of res, in next iteration LSB of res will move left as done in above line
+            n = n>>1;  //since current LSB is processed it is excluded and new LSB would be considered.
+        }
+       
+
+        return res;
+        
+    }
