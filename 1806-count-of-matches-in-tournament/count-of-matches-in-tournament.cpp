@@ -20,7 +20,7 @@ public:
             }
             return numMatches;*/
 
-            return n-1;
+            return n-1; //This is intuitive approach taking different input, found that n-1 match will be played. but actual approach is the commented code
         
     }
 };
