@@ -1,0 +1,29 @@
+This problem is based on the fact when XOR is applied to set of numbers with duplicates numbers, duplicate number in pairs cancel out.
+But two numbers are unique so doing XOR will give XOR of two unique numbers.
+To identify both, find the first set bit in the xor. First we can take from right.
+
+  Now xor all the numbers of array which has same bit set at the position where first bit is set to filter out the first number.
+  Xor other numbers of array where the bit is not set at the position which is found above.
+
+  ex:
+    
+  arr: [1,2,1,3,2,5]
+    in bit representation, it is 
+    1 => 0001 (we can represent in 32 bits but for simplicity keeping 4 bits only)
+    2 => 0010
+    1 => 0001
+    3 => 0011
+    2 => 0010
+    5 => 0101
+  
+  xor of arr: 1^2^1^3^2^5 => 3^5 => 0110
+
+  so resultant xor is 0110
+
+  in the resultant XOR 0110, 1 appears means bits are different in this position for two numbers which can be anyone. To identify it find the first set bit in resultant xor.
+  in 0110, first bit set is at position 2 from right.
+
+  Find all the numbers of array whose bit is set at position 2 from right . They are 2,3,2. Their bit representation is 0010, 0011, 0010. Take xor of it. so result will be 3
+  Find all numbers of array whose bit is not set at postion at 2 from right. They are 1,1,5. In bit representation, these are 0001,0001,0101. Take xor of these, so result is 5
+
+  Got the result as 3 and 5.
