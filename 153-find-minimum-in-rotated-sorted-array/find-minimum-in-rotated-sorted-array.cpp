@@ -8,13 +8,13 @@ public:
         {
             int mid = left + (right-left)/2;
 
-            if(nums[mid]>nums[right])
+            if(nums[mid]>nums[right]) //means small element will be on right side of mid so left = mid +1
             {
                 left = mid+1;
             }
             else
             {
-                right = mid;
+                right = mid; //if mid element is small means either its the smallest or elements on left will be smallest
             }
 
         }
