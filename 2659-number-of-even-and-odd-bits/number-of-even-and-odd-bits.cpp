@@ -5,19 +5,22 @@ public:
         int nEven = 0;
         int nOdd = 0;
 
-        int count = 0;
+       // int count = 0;
+        bool isEven= true;
         while(n)
         {
            
-            if(count%2 == 0 && (n&1))
+            if(isEven && (n&1))
             {
                 nEven++;
+               
             }
-            else if(count%2 == 1 && (n&1))
+            else if( isEven==false && (n&1))
             {
                 nOdd++;
             }
-            count++;
+             isEven = !isEven;
+           
             n = n>>1;
         }
         return {nEven, nOdd};
