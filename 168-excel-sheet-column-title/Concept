@@ -1,0 +1,14 @@
+Solution to this problem:
+
+When column number exceeds 26, next sequence of A, B.. starts. So its in multiple of 26. Certainly mod 26 would be used.
+Only case that need to be taken care is if n is 26, 26%26 would be 0 for Z. To handle the mod scenario so that 1 would be A, remainder should be reduced by 1.
+Sequence will go from 0 to 25. 
+'A' + n%26 will give right character.
+'A' + 0 => 'A' (0 is obtained when n=1, i.e. n-1%26)
+'A' + 25 => 'Z' (when n=26, n-1%26 = 25, so Z is result)
+
+So every time remainder is reduced by one to get the exact value. 
+
+if n = 28, reduce n = n-1, (n-1)% 26 = 1 => 'A' + 1 => 'B'
+Now n = n/26 => 1 => reduce it by 1, n = 0 => 'A' + 0 => 'A'
+So string form is BA, which needs to be reversed, so final result is AB
