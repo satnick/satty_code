@@ -14,13 +14,13 @@ public:
         while(left<right)
         {           
             mid = left + (right-left)/2;
-            if(nums[mid+1] > nums[mid])
+            if(nums[mid+1] > nums[mid])// if mid+1 element is greater than mid element, then certainly there would be some element smaller element than mid+1, so check in right
             {
                 left = mid+1;
             }
-            else 
+            else ////if mid element is greater than mid+1 element then either this mid element or any other element on left would be peak element so check in left part of mid
             {
-                right = mid;
+                right = mid; 
             }
         }
         return right;
