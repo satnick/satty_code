@@ -13,7 +13,7 @@ public:
         st.push_back(val);
         last++;
 
-        if(minSt.size() == 0)
+        if(minSt.size() == 0) //initially when stack is empty, minimum would be the first element
         { 
             minSt.push_back(val);
             return;
