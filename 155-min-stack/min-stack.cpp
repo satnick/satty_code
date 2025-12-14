@@ -1,13 +1,12 @@
 class MinStack {
 
-    vector<int> st, minSt;
+    vector<int> st;
+    vector<int> minSt; //creating another stack which will push minimum every time an element is pushed also.
     int last;
-    //int min;
+   
 public:
     MinStack() {
-        last = -1;
-       // min = INT_MAX;
-        
+        last = -1;        
     }
     
     void push(int val) {
@@ -22,7 +21,6 @@ public:
 
         if(minSt[last-1] > val)
         {
-            //min = val;
             minSt.push_back(val);
         }
         else
@@ -34,10 +32,9 @@ public:
 
         
         st.erase(st.begin()+last);
-        minSt.erase(minSt.begin()+last);      
+        minSt.erase(minSt.begin()+last);     
 
-        last--;  
-        //min = st[top]   ;
+        last--;      
            
     }
     
