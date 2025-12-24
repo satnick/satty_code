@@ -27,7 +27,7 @@ public:
                 right++;
             else
             {
-                cout<<left <<" : " << right<<endl;
+                //cout<<left <<" : " << right<<endl;
                 first = left;
                 second = right;
                 count++;
