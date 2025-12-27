@@ -33,16 +33,13 @@ public:
     
     int next() {
 
-        //if(hasNext())
-        //{
-            TreeNode *node = st.top();
-            st.pop();
-            if(node->right)
-            {
-                insertLeftOrderChilds(node->right);
-            }
-            
-        //}
+        TreeNode *node = st.top();
+        st.pop();
+        if(node->right)
+        {
+            insertLeftOrderChilds(node->right);
+        }
+                
         return node->val;
     }
     
