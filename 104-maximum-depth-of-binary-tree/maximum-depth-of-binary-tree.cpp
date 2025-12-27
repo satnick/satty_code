@@ -12,7 +12,7 @@
 class Solution {
 public:
 
-    int helper(TreeNode* root)
+    /*int helper(TreeNode* root)
     {
         if(root == nullptr)
             return 0;
@@ -26,11 +26,22 @@ public:
         }
 
         return 1+rightHeight;
-    }
+    }*/
 
     int maxDepth(TreeNode* root) {
 
-        return helper(root);
+        if(root == nullptr)
+            return 0;
+
+        int leftHeight = maxDepth(root->left);
+        int rightHeight = maxDepth(root->right);
+
+        if(leftHeight>= rightHeight)
+        {
+            return 1+leftHeight;;
+        }
+
+        return 1+rightHeight;
         
     }
 };
