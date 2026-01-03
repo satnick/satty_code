@@ -12,11 +12,11 @@ public:
         {
             int mid = start + (end-start)/2;
 
-            if(mid == x/mid)
+            if(mid == x/mid) //we can take mid*mid also, but this cause integer overflow and runtime error
             {
                     return mid;
             }
-            else if(mid > x/mid)
+            else if(mid > x/mid)  //we can take mid*mid also, but this cause integer overflow and runtime error
             {
                 end = mid-1;
             }
