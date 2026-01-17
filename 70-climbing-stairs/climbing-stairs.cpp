@@ -1,6 +1,7 @@
 class Solution {
 public:
 
+    //bottom up 
      int climbStairs(int n) {
 
         if(n==1) return 1;
@@ -19,6 +20,7 @@ public:
         return memo[n];     
      }
 
+    //top down
     /*int climbStairs(int n) {
 
         if(n==1 || n==2)
