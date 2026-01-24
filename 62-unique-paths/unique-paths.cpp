@@ -4,14 +4,36 @@ public:
 
 
         vector<vector<int>> memo(m, vector<int>(n, -1));
-        return helper(m, n, 0, 0, memo);       
+        //return helper(m, n, 0, 0, memo);  //top down    
+        return helper(m, n, 0, 0); 
 
                 
     }
 
+    int helper(int m, int n, int i, int j)
+    {
+        vector<vector<int>> memo(m, vector<int>(n, 0));
+
+        for(int i=0; i<m; i++)
+        for(int j=0; j<n; j++)
+        {
+            if(i==0 || j==0)
+                memo[i][j] = 1;
+        }
+
+        for(int i=1; i<m; i++)
+        {
+            for(int j=1; j<n; j++)
+            {
+                memo[i][j] = memo[i-1][j] + memo[i][j-1];
+            }
+        }
+
+        return memo[m-1][n-1];
+    }
     
     //Top down appraach
-    int helper(int m, int n, int i, int j,  vector<vector<int>> &memo)
+    /*int helper(int m, int n, int i, int j,  vector<vector<int>> &memo)
     {
         if(i==m || j==n)
             return 0;
@@ -26,7 +48,7 @@ public:
 
         return  memo[i][j] = count1 + count2;
         
-    }
+    }*/
 
     //  recursive approach
 
