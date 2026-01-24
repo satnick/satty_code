@@ -10,7 +10,7 @@ public:
     }
 
     
-
+    //Top down appraach
     int helper(int m, int n, int i, int j,  vector<vector<int>> &memo)
     {
         if(i==m || j==n)
@@ -28,6 +28,7 @@ public:
         
     }
 
+    //  recursive approach
 
    /* int helper(int m, int n, int i, int j)
     {
@@ -36,8 +37,8 @@ public:
         if(i==m-1 and j==n-1)
             return 1;
         
-        int count1 = uniquePaths(m-1, n);
-        int count2 = uniquePaths(m, n-1);
+        int count1 = helper(m-1, n);
+        int count2 = helper(m, n-1);
 
         return count1 + count2;
         
