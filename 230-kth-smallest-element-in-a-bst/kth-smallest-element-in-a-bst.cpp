@@ -17,7 +17,7 @@ public:
 
     void inorder(TreeNode *root, int k)
     {
-        if(root == nullptr)
+        if(root == nullptr || result!=0)
             return;
 
         inorder(root->left, k);
